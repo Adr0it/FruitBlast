@@ -1,0 +1,153 @@
+/* Main */
+@font-face {
+  font-family: "Coolvetica";
+  src: url("fonts/Coolvetica\ Rg\ It.otf");
+}
+@font-face {
+  font-family: "SuperThree";
+  src: url("fonts/Super\ Three\ Personal\ Use\ Only.ttf");
+}
+@font-face {
+  font-family: "Nexa";
+  src: url("fonts/Nexa-Heavy.ttf");
+}
+
+#title {
+    font-family: "Coolvetica";
+    text-align: center;
+}
+
+#slot {
+    display: flex;
+    width: 1000px;
+    background: transparent;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#display {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(8, 1fr);
+    height: 492.8px;
+    width: 492.8px;
+    margin: 0;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background: rgb(219, 255, 214);
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#spin {
+    font-family: "SuperThree";
+    width: 200px;
+    height: 200px;
+    margin-left: 15%;
+    margin-top: 15%;
+    background: red;
+    border: dotted;
+    border-color: black;
+    border-radius: 50%;
+    font-size: 50px;
+}
+
+#spin:hover {
+    background: rgb(255, 74, 74);
+}
+
+#spin:active {
+    transform: scale(0.95);
+}
+
+/* Fruits */
+.apple {
+  position: absolute;
+  width: 61.6px;
+  height: 61.6px;
+  background-image: url("imgs/fruits/tile000.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banana  {
+  position: absolute;
+  width: 61.6px;
+  height: 61.6px;
+  background-image: url("imgs/fruits/tile083.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.grape {
+  position: absolute;
+  width: 61.6px;
+  height: 61.6px;
+  background-image: url("imgs/fruits/tile005.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.orange {
+  position: absolute;
+  width: 61.6px;
+  height: 61.6px;
+  background-image: url("imgs/fruits/tile009.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.pineapple {
+  position: absolute;
+  width: 61.6px;
+  height: 61.6px;
+  background-image: url("imgs/fruits/tile125.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.cherry {
+  position: absolute;
+  width: 61.6px;
+  height: 61.6px;
+  background-image: url("imgs/fruits/tile166.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.blueberry {
+    position: absolute;
+    width: 61.6px;
+    height: 61.6px;
+    background-image: url("imgs/fruits/tile054.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#info {
+  font-family: "Nexa";
+  margin-top: 10px;
+  margin-left: 500px;
+  height: 100px;
+  width: 500px;
+  background-color: rgb(55, 145, 198);
+  border-radius: 5px;
+}
+
+#profit {
+  margin-left: 75%;
+}
+
+#costs {
+  margin-left: 5%;
+  display: flex;
+  gap: 20px;
+  font-size: 10px;
+}
