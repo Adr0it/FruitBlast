@@ -99,11 +99,11 @@ function seek_squares(ar, sq, out) {
     }
     if (h.length <= 2 && v.length <= 2)
         return null;
-    if (h.length == v.length)
-        return h.concat(v);
+    if (v.length > h.length)
+        return v;
     if (h.length > v.length)
         return h;
-    return v;
+    return h.concat(v);
 }
 
 // matching algorithm
