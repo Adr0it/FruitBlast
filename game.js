@@ -137,7 +137,7 @@ function check_matches() {
     profit.textContent = "Profit: " + p;
 }
 
-// spin mechanism 
+// spin mechanism
 async function spin_clicked() {
     clear();
     fill_empty();
