@@ -69,10 +69,10 @@ function seek_squares(ar, sq, out) {
 
     out.push(sq);
 
-    if (sq - 1 >= 1) seek_squares(ar, sq - 1, out);
-    if (sq - 8 >= 1) seek_squares(ar, sq - 8, out);
-    if (sq + 1 <= 64) seek_squares(ar, sq + 1, out);
-    if (sq + 8 <= 64) seek_squares(ar, sq + 8, out);
+    seek_squares(ar, sq - 1, out);
+    seek_squares(ar, sq - 8, out);
+    seek_squares(ar, sq + 1, out);
+    seek_squares(ar, sq + 8, out);
 
     // additional checks for proper matching detection
     h = []
