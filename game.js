@@ -101,10 +101,10 @@ function detect_match(out) {
             continue;
         }
     }
-    if (h.length <= 2 && v.length <= 2) {
-        console.log("H:", h, "V:", v)
+    
+    console.log("H:", h, "V:", v)
+    if (h.length <= 2 && v.length <= 2) 
         return null
-    }
     if (v.length > h.length)
         return v;
     if (h.length > v.length)
@@ -149,7 +149,7 @@ function check_matches() {
 async function spin_clicked() {
     clear()
     fill_empty()
-    await delay (4100)
+    await delay (3000)
     check_matches()
 }
 spin.addEventListener("click", spin_clicked)
