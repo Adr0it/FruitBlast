@@ -36,7 +36,7 @@ function clear() {
         for (let i = 0; i < t.length; i++) {
             t[i].remove()
             let cell = document.getElementById(t[i].id.toString())
-            cell.style.backgroundColor = "#DBFFD6"
+            cell.style.backgroundColor = "#498e47ff"
         }
     })
 }
