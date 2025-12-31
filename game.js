@@ -36,7 +36,7 @@ function clear() {
         for (let i = 0; i < t.length; i++) {
             t[i].remove()
             let cell = document.getElementById(t[i].id.toString())
-            cell.style.backgroundColor = "#498e47ff"
+            cell.style.backgroundColor = "#DBFFD6"
         }
     })
 }
@@ -101,8 +101,10 @@ function detect_match(out) {
             continue;
         }
     }
-    if (h.length <= 2 && v.length <= 2)
-        return null;
+    if (h.length <= 2 && v.length <= 2) {
+        console.log("H:", h, "V:", v)
+        return null
+    }
     if (v.length > h.length)
         return v;
     if (h.length > v.length)
@@ -136,7 +138,7 @@ function check_matches() {
                 visited_squares.push(match[j])
                 p += costs[f]
                 let cell = document.getElementById(match[j].toString())
-                cell.style.backgroundColor = "#46ff50ff"
+                cell.style.backgroundColor = "#498e47ff"
             }
         }
     })
