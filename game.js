@@ -141,7 +141,7 @@ function check_matches() {
 async function spin_clicked() {
     clear();
     fill_empty();
-    await delay (4100);
+    await delay (4150);
     check_matches();
 }
 spin.addEventListener("click", spin_clicked);
